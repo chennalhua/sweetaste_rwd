@@ -1,0 +1,211 @@
+
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 24px;
+    @include pad(){
+        padding:0;
+    }
+}
+
+//nav
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 0;
+    position: relative;
+    @include pad(){
+        margin: 0 auto;
+        padding: 0 24px;
+    }
+    .logo{
+        width: 200px;
+        height: 60px;
+        background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/a3ed9441c2522e2b8edb35a9847121eb3e6af16e/student-week1/logo-all-dark.svg") no-repeat center;
+        display: block;
+        text-indent: 101%;
+        white-space: nowrap;
+        overflow: hidden;
+        @include pad(){
+            width: 180px;
+            background:url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logotype-sm-dark.svg") no-repeat center 
+        }
+        @include mobile(){
+            width: 120px;
+        }
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        ul {
+            display: flex;
+            align-items: center;
+            margin-right: 79px;
+            @include pad(){
+                display: none;
+            }
+            li a{
+                margin-left: 60px;
+                color: $dark-green;
+            }
+        }
+    }
+}
+
+.hamburger-menu{
+    display: none;
+    @include pad(){
+        display: block;
+        :focus{
+            outline: 0;
+        }
+    }
+}
+//nav end
+
+//sub
+.sub-email{
+    background:$dark-green;
+    padding: 42px 0 ;
+}
+
+.sub-info{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    @include pad(){
+        margin: 0 auto;
+        padding: 0 24px;
+        flex-direction: column;
+    }
+    h3{
+        padding: 28px;
+        font-size:24px;
+        color:$light-green;
+        background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logo-light.svg") no-repeat;
+        background-position-y: center;
+        background-size: 40px;
+        text-indent: 25px;
+    }
+    form{
+        width:50%;
+        .input-group{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .input-group-text{
+            height: 56px;
+            background:$light-green;
+            border:1px solid $light-green;
+            font-size:24px;
+            padding: 16px 24px;
+        }
+        i{
+            color: $dark-green;
+        }
+    }
+    input{
+        width:100%;
+        height: 56px;
+        background:$light-green;
+        border:1px solid $light-green;
+        font-size:24px; 
+        outline:none;
+    }
+}
+
+.input-group button{
+    height: 56px;
+    background:$orange;
+    border:1px solid $orange;
+    padding: 20px 24px;
+    cursor: pointer;
+}
+//sub end
+
+
+//footer
+.footer{
+    background:$light-green;
+    color: $dark-green;
+    &-item{
+        padding: 38px 0 16px 0;
+        @include pad(){
+            padding: 38px 24px 30px 24px;
+        }
+    }
+    &-top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        @include mobile(){
+            align-items: space-around;
+        }
+    }
+    &-bottom{
+        display: flex;
+        justify-content: space-between;
+        @include mobile(){
+            flex-direction: column; 
+        }
+    }
+}
+
+.store-info {
+    .logo{
+        display: block;
+        width: 200px;
+        height: 40px;
+        background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/a3ed9441c2522e2b8edb35a9847121eb3e6af16e/student-week1/logo-all-dark.svg") no-repeat center;
+        text-indent: 101%;
+        white-space: nowrap;
+        overflow: hidden;
+        margin-bottom: 115px;
+        @include mobile(){
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.store-list{
+    line-height:24px;
+}
+
+.slogan{
+    /* display: block; */
+    font-family: 'Noto Serif TC', 'Microsoft MingLiU', serif;
+    writing-mode: vertical-rl; 
+    font-size: 24px;
+    font-weight: bold;
+    line-height:30px;
+    letter-spacing: 3px;
+    @include mobile(){
+        display: none;
+    }
+    h2:last-of-type{
+        margin-top: 20px;
+    }
+}
+
+
+.icon{
+    display: flex;
+    a{
+        display: block;
+        font-size: 40px;
+        margin-right: 10px;
+        color: $dark-green;
+    }
+}
+
+.copyright{
+    font-family:Times;
+    align-self: flex-end;
+    @include mobile(){
+        align-self: flex-start;
+        margin-top: 25px;
+    }
+}
+//footer end

@@ -1,0 +1,166 @@
+.header{
+    margin-bottom: 60px;
+    @include pad(){
+        width:100%;
+        margin:0;
+    }
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    @include pad(){
+        flex-direction: column;
+    }
+}
+
+.side-menu{
+    width: 30%;
+    @include pad(){
+        width:100%; 
+        margin-bottom: 5%; 
+    }
+    h2{
+        display: block;
+        padding: 16px 0;
+        font-size:24px;
+        background:$dark-green;
+        color:$light-green;
+        text-align: center;
+    }
+    li a{
+        color:$dark-green;
+        display: block;
+        padding: 16px 0;
+        font-size:24px;
+        border: 1px solid $light-green;
+        text-align: center;
+        :hover {
+            background:$light-green
+        }
+    }
+    
+}
+
+.active{
+    background:$light-green;
+}
+
+.product{
+    width:70%;
+    @include pad(){
+        width: 100%;
+    }
+}
+
+.pro-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include pad(){
+        justify-content: space-around;
+    }
+    @include mobile(){
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.card{
+    width: 45%;
+    position: relative;
+    color:$dark-green;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    @include pad(){
+        margin:0 0 5% 0;
+    }
+    @include mobile(){
+        width: 80%;
+    }
+    img{
+        display: block;
+    }
+    .tag{
+        position: absolute;
+        top: 0;
+        left: 20px;
+        writing-mode: vertical-lr;
+        padding: 10px;
+        background:$dark-green;
+        color: $light-green;
+        letter-spacing:5px;
+    }
+    .love{
+        position: absolute;
+        top: 20px;
+        right: 24px;
+    }
+    .cart{
+        display: block;
+        background:$light-green;
+        color: $dark-green;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 16px 0;
+        text-align: center;
+        :hover{
+            background:$dark-green;
+            color: $light-green;
+        }
+    }
+    .info{
+        width:100%;
+        display: flex;
+        font-size:20px;
+        text-align: center;
+        border: 1px solid $light-green;
+        .name{
+            width:60%;
+            padding:15px 0;
+            border-right: 1px solid $light-green;
+        }
+        .price{
+            width:40%;
+            padding:15px 0;
+        }
+    }
+}
+
+
+.page-tag{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 60px;
+    @include pad(){
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    img{
+        display: block;
+    }
+    li{
+        width: 60px;
+        border: 1px solid $light-green;
+        text-align: center;
+        a{
+            display: block;
+            color: $dark-green;
+            padding:18px;
+        }
+    }
+    .number a{
+        padding:21px 18px;
+        :hover{
+            background:$dark-green;
+            color: $light-green;
+         }
+    }
+}
+
+
+.active-dark{
+   color:$dark-green;
+   background: $light-green;
+}

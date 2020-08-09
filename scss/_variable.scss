@@ -1,0 +1,15 @@
+$light-green:#EAF0ED;
+$dark-green: #3F5D45;
+$orange:#FFE180;
+
+@mixin pad{
+    @media (max-width:768px){
+        @content;
+    }
+}
+
+@mixin mobile{
+    @media (max-width:414px){
+        @content;
+    }
+}

@@ -1,0 +1,606 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  text-decoration: none;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+}
+
+.nav .logo {
+  width: 200px;
+  height: 60px;
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/a3ed9441c2522e2b8edb35a9847121eb3e6af16e/student-week1/logo-all-dark.svg") no-repeat center;
+  display: block;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .nav .logo {
+    width: 180px;
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logotype-sm-dark.svg") no-repeat center;
+  }
+}
+
+@media (max-width: 414px) {
+  .nav .logo {
+    width: 120px;
+  }
+}
+
+.nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 79px;
+}
+
+@media (max-width: 768px) {
+  .nav .menu ul {
+    display: none;
+  }
+}
+
+.nav .menu ul li a {
+  margin-left: 60px;
+  color: #3F5D45;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+  .hamburger-menu :focus {
+    outline: 0;
+  }
+}
+
+.sub-email {
+  background: #3F5D45;
+  padding: 42px 0;
+}
+
+.sub-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .sub-info {
+    margin: 0 auto;
+    padding: 0 24px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.sub-info h3 {
+  padding: 28px;
+  font-size: 24px;
+  color: #EAF0ED;
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logo-light.svg") no-repeat;
+  background-position-y: center;
+  background-size: 40px;
+  text-indent: 25px;
+}
+
+.sub-info form {
+  width: 50%;
+}
+
+.sub-info form .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sub-info form .input-group-text {
+  height: 56px;
+  background: #EAF0ED;
+  border: 1px solid #EAF0ED;
+  font-size: 24px;
+  padding: 16px 24px;
+}
+
+.sub-info form i {
+  color: #3F5D45;
+}
+
+.sub-info input {
+  width: 100%;
+  height: 56px;
+  background: #EAF0ED;
+  border: 1px solid #EAF0ED;
+  font-size: 24px;
+  outline: none;
+}
+
+.input-group button {
+  height: 56px;
+  background: #FFE180;
+  border: 1px solid #FFE180;
+  padding: 20px 24px;
+  cursor: pointer;
+}
+
+.footer {
+  background: #EAF0ED;
+  color: #3F5D45;
+}
+
+.footer-item {
+  padding: 38px 0 16px 0;
+}
+
+@media (max-width: 768px) {
+  .footer-item {
+    padding: 38px 24px 30px 24px;
+  }
+}
+
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 414px) {
+  .footer-top {
+    -webkit-box-align: space-around;
+        -ms-flex-align: space-around;
+            align-items: space-around;
+  }
+}
+
+.footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 414px) {
+  .footer-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.store-info .logo {
+  display: block;
+  width: 200px;
+  height: 40px;
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/a3ed9441c2522e2b8edb35a9847121eb3e6af16e/student-week1/logo-all-dark.svg") no-repeat center;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 115px;
+}
+
+@media (max-width: 414px) {
+  .store-info .logo {
+    margin-bottom: 40px;
+  }
+}
+
+.store-list {
+  line-height: 24px;
+}
+
+.slogan {
+  /* display: block; */
+  font-family: 'Noto Serif TC', 'Microsoft MingLiU', serif;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 414px) {
+  .slogan {
+    display: none;
+  }
+}
+
+.slogan h2:last-of-type {
+  margin-top: 20px;
+}
+
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icon a {
+  display: block;
+  font-size: 40px;
+  margin-right: 10px;
+  color: #3F5D45;
+}
+
+.copyright {
+  font-family: Times;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+@media (max-width: 414px) {
+  .copyright {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 25px;
+  }
+}
+
+.header {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.side-menu {
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .side-menu {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}
+
+.side-menu h2 {
+  display: block;
+  padding: 16px 0;
+  font-size: 24px;
+  background: #3F5D45;
+  color: #EAF0ED;
+  text-align: center;
+}
+
+.side-menu li a {
+  color: #3F5D45;
+  display: block;
+  padding: 16px 0;
+  font-size: 24px;
+  border: 1px solid #EAF0ED;
+  text-align: center;
+}
+
+.side-menu li a :hover {
+  background: #EAF0ED;
+}
+
+.active {
+  background: #EAF0ED;
+}
+
+.product {
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+  .product {
+    width: 100%;
+  }
+}
+
+.pro-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .pro-list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 414px) {
+  .pro-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.card {
+  width: 45%;
+  position: relative;
+  color: #3F5D45;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: 0 0 5% 0;
+  }
+}
+
+@media (max-width: 414px) {
+  .card {
+    width: 80%;
+  }
+}
+
+.card img {
+  display: block;
+}
+
+.card .tag {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  padding: 10px;
+  background: #3F5D45;
+  color: #EAF0ED;
+  letter-spacing: 5px;
+}
+
+.card .love {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+}
+
+.card .cart {
+  display: block;
+  background: #EAF0ED;
+  color: #3F5D45;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 16px 0;
+  text-align: center;
+}
+
+.card .cart :hover {
+  background: #3F5D45;
+  color: #EAF0ED;
+}
+
+.card .info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #EAF0ED;
+}
+
+.card .info .name {
+  width: 60%;
+  padding: 15px 0;
+  border-right: 1px solid #EAF0ED;
+}
+
+.card .info .price {
+  width: 40%;
+  padding: 15px 0;
+}
+
+.page-tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .page-tag {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.page-tag img {
+  display: block;
+}
+
+.page-tag li {
+  width: 60px;
+  border: 1px solid #EAF0ED;
+  text-align: center;
+}
+
+.page-tag li a {
+  display: block;
+  color: #3F5D45;
+  padding: 18px;
+}
+
+.page-tag .number a {
+  padding: 21px 18px;
+}
+
+.page-tag .number a :hover {
+  background: #3F5D45;
+  color: #EAF0ED;
+}
+
+.active-dark {
+  color: #3F5D45;
+  background: #EAF0ED;
+}
+/*# sourceMappingURL=all.css.map */
