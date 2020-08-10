@@ -1,0 +1,66 @@
+.checkout-header{
+    max-width: 940px;
+    height: 460px;
+    background: url("https://bit.ly/2P7GhNd");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:60px;
+    overflow: hidden;
+    @include pad(){
+        width:100%;
+        margin:0;
+    }
+    .checkout-content{
+        color:$dark-green;
+        text-align: center;
+        margin-bottom: 50px;
+        h2{
+            font-family: 'Noto Serif TC', 'Microsoft MingLiU', serif;
+            font-weight: bold;
+            font-size:50px;
+        }
+    }
+    .process-icon{
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-bottom: 32px;
+        i{
+            font-size: 25px;
+        }
+        hr{
+            width: 65px;
+            height: 3px;
+            background: $dark-green;
+        }
+    }
+    .checkout-big-btn{
+        @include pad(){
+            display: none;
+        }
+    }
+}
+
+.checkout-btn{
+    display: block;
+    font-size: 24px;
+    padding:20px 100px;
+    background:$orange;
+    color: $dark-green;
+}
+.checkout-btn:hover{
+    background:$dark-green;
+    color:$light-green;
+}
+
+.checkout-small-btn{
+    display: none;
+    @include pad(){
+        display: block;
+        text-align: center;
+    }
+}

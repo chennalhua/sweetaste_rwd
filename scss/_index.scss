@@ -36,9 +36,9 @@
         font-size:24px;
         border: 1px solid $light-green;
         text-align: center;
-        :hover {
-            background:$light-green
-        }
+    }
+    li a:hover {
+        background:$light-green
     }
     
 }
@@ -105,10 +105,10 @@
         font-weight: bold;
         padding: 16px 0;
         text-align: center;
-        :hover{
-            background:$dark-green;
-            color: $light-green;
-        }
+    }
+    .cart:hover{
+        background:$dark-green;
+        color: $light-green;
     }
     .info{
         width:100%;
@@ -152,11 +152,11 @@
     }
     .number a{
         padding:21px 18px;
-        :hover{
-            background:$dark-green;
-            color: $light-green;
-         }
     }
+    .number a:hover{
+        background:$dark-green;
+        color: $light-green;
+     }
 }
 
 

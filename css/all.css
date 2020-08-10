@@ -424,7 +424,7 @@ img {
   text-align: center;
 }
 
-.side-menu li a :hover {
+.side-menu li a:hover {
   background: #EAF0ED;
 }
 
@@ -525,7 +525,7 @@ img {
   text-align: center;
 }
 
-.card .cart :hover {
+.card .cart:hover {
   background: #3F5D45;
   color: #EAF0ED;
 }
@@ -590,7 +590,7 @@ img {
   padding: 21px 18px;
 }
 
-.page-tag .number a :hover {
+.page-tag .number a:hover {
   background: #3F5D45;
   color: #EAF0ED;
 }
@@ -598,5 +598,100 @@ img {
 .active-dark {
   color: #3F5D45;
   background: #EAF0ED;
+}
+
+.checkout-header {
+  max-width: 940px;
+  height: 460px;
+  background: url("https://bit.ly/2P7GhNd");
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .checkout-header {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.checkout-header .checkout-content {
+  color: #3F5D45;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.checkout-header .checkout-content h2 {
+  font-family: 'Noto Serif TC', 'Microsoft MingLiU', serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.checkout-header .process-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+}
+
+.checkout-header .process-icon i {
+  font-size: 25px;
+}
+
+.checkout-header .process-icon hr {
+  width: 65px;
+  height: 3px;
+  background: #3F5D45;
+}
+
+@media (max-width: 768px) {
+  .checkout-header .checkout-big-btn {
+    display: none;
+  }
+}
+
+.checkout-btn {
+  display: block;
+  font-size: 24px;
+  padding: 20px 100px;
+  background: #FFE180;
+  color: #3F5D45;
+}
+
+.checkout-btn:hover {
+  background: #3F5D45;
+  color: #EAF0ED;
+}
+
+.checkout-small-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .checkout-small-btn {
+    display: block;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=all.css.map */
