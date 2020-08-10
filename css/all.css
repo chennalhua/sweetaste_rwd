@@ -642,7 +642,7 @@ img {
   font-size: 50px;
 }
 
-.checkout-header .process-icon {
+.checkout-header .check-process {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -655,11 +655,11 @@ img {
   margin-bottom: 32px;
 }
 
-.checkout-header .process-icon i {
+.checkout-header .check-process i {
   font-size: 25px;
 }
 
-.checkout-header .process-icon hr {
+.checkout-header .check-process hr {
   width: 65px;
   height: 3px;
   background: #3F5D45;
@@ -674,14 +674,15 @@ img {
 .checkout-btn {
   display: block;
   font-size: 24px;
+  font-weight: 500;
   padding: 20px 100px;
   background: #FFE180;
   color: #3F5D45;
 }
 
 .checkout-btn:hover {
-  background: #3F5D45;
-  color: #EAF0ED;
+  background: #EAF0ED;
+  color: #3F5D45;
 }
 
 .checkout-small-btn {
@@ -693,5 +694,235 @@ img {
     display: block;
     text-align: center;
   }
+}
+
+.main-elecinvoice {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .main-elecinvoice {
+    margin-bottom: 0;
+  }
+}
+
+.main-elecinvoice .elecinvoice-content {
+  width: 55%;
+  height: 100%;
+  background: #3F5D45;
+}
+
+@media (max-width: 768px) {
+  .main-elecinvoice .elecinvoice-content {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.main-elecinvoice .elecinvoice-content button {
+  width: 100%;
+  padding: 20px 0;
+  font-size: 24px;
+  font-weight: bold;
+  background: #FFE180;
+  color: #3F5D45;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.main-elecinvoice .elecinvoice-content button:hover {
+  background: #EAF0ED;
+  color: #3F5D45;
+}
+
+.main-elecinvoice .invoice-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 40px;
+}
+
+.main-elecinvoice .invoice-title h2 {
+  font-size: 36px;
+  color: #EAF0ED;
+}
+
+.main-elecinvoice .invoice-process {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-elecinvoice .invoice-process i {
+  color: #EAF0ED;
+  font-size: 20px;
+}
+
+.main-elecinvoice .invoice-process hr {
+  width: 65px;
+  height: 2px;
+  background: #EAF0ED;
+}
+
+.main-elecinvoice .invoice-process span {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #EAF0ED;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.main-elecinvoice .elecinvoice-form {
+  max-width: 100%;
+  padding: 0 40px;
+}
+
+.main-elecinvoice .elecinvoice-form .invoice-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.main-elecinvoice .elecinvoice-form .invoice-btn a {
+  width: 100%;
+  display: block;
+  color: #EAF0ED;
+  font-size: 20px;
+  border: 1px solid #EAF0ED;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.main-elecinvoice .elecinvoice-form .invoice-btn a:hover {
+  background: #FFE180;
+  color: #3F5D45;
+}
+
+.main-elecinvoice .elecinvoice-form .invoice-btn .active-btn {
+  background: #EAF0ED;
+  color: #3F5D45;
+}
+
+.main-elecinvoice .elecinvoice-form label, .main-elecinvoice .elecinvoice-form input {
+  display: block;
+}
+
+.main-elecinvoice .elecinvoice-form label {
+  font-size: 20px;
+  color: #EAF0ED;
+  margin-bottom: 10px;
+}
+
+.main-elecinvoice .elecinvoice-form input {
+  width: 100%;
+  padding: 17px 20px;
+  margin-bottom: 16px;
+}
+
+.main-elecinvoice .order-info {
+  width: 35%;
+}
+
+@media (max-width: 768px) {
+  .main-elecinvoice .order-info {
+    display: none;
+  }
+}
+
+.main-elecinvoice .order-info h3 {
+  font-size: 24px;
+  padding: 16px 0;
+  background: #EAF0ED;
+  color: #8DA291;
+  text-align: center;
+}
+
+.main-elecinvoice .user-order, .main-elecinvoice .user-shop {
+  margin-bottom: 20px;
+  border: 1px solid #EAF0ED;
+}
+
+.main-elecinvoice .user-order ul, .main-elecinvoice .user-shop ul {
+  padding: 16px 20px;
+}
+
+.main-elecinvoice .user-order li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+  color: #8DA291;
+}
+
+.main-elecinvoice .user-order li:last-of-type {
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.main-elecinvoice .user-shop li {
+  padding: 20px 0;
+  color: #8DA291;
+}
+
+.main-elecinvoice .user-shop li p {
+  line-height: 25px;
+}
+
+.main-elecinvoice .user-shop li p:last-of-type {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.main-elecinvoice .user-shop li:nth-child(1) {
+  width: 120px;
+  height: 80px;
+  background: url("../img/product-1.jpeg") no-repeat center;
+  background-size: cover;
+  display: block;
+  text-indent: 120%;
+  white-space: nowrap;
+  margin-bottom: 16px;
+}
+
+.main-elecinvoice .user-shop li:nth-child(2) {
+  width: 120px;
+  height: 80px;
+  background: url("../img/product-2.jpeg") no-repeat center;
+  background-size: cover;
+  display: block;
+  text-indent: 120%;
+  white-space: nowrap;
+  margin-bottom: 16px;
+}
+
+.main-elecinvoice .user-shop li:nth-child(3) {
+  width: 120px;
+  height: 80px;
+  background: url("../img/product-3.jpeg") no-repeat center;
+  background-size: cover;
+  display: block;
+  text-indent: 120%;
+  white-space: nowrap;
 }
 /*# sourceMappingURL=all.css.map */

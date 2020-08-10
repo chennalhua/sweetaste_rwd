@@ -24,7 +24,7 @@
             font-size:50px;
         }
     }
-    .process-icon{
+    .check-process{
         display: flex;
         justify-content:space-between;
         align-items:center;
@@ -48,13 +48,14 @@
 .checkout-btn{
     display: block;
     font-size: 24px;
+    font-weight: 500;
     padding:20px 100px;
     background:$orange;
     color: $dark-green;
 }
 .checkout-btn:hover{
-    background:$dark-green;
-    color:$light-green;
+    background:$light-green;
+    color:$dark-green;
 }
 
 .checkout-small-btn{

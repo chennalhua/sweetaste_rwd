@@ -1,0 +1,177 @@
+.main-elecinvoice{
+    max-width: 100%;
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 60px;
+    @include pad(){
+        margin-bottom:0;
+    }
+    .elecinvoice-content{
+        width: 55%;
+        height: 100%;
+        background:$dark-green;
+        @include pad(){
+            width:100%;
+            margin:0;
+        }
+        button{
+            width:100%;
+            padding:20px 0;
+            font-size:24px;
+            font-weight: bold;
+            background:$orange;
+            color: $dark-green;
+            outline:none;
+            border:none;
+            cursor: pointer;
+        }
+        button:hover{
+            background:$light-green;
+            color: $dark-green;
+        }
+    }
+    .invoice-title{
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        padding: 30px 40px;
+        h2{
+            font-size: 36px;
+            color: $light-green;
+        }
+    }
+    .invoice-process{
+        display: flex;
+        justify-content:space-between;
+        i{
+            color:$light-green;
+            font-size: 20px;
+        }
+        hr{
+            width: 65px;
+            height: 2px;
+            background: $light-green;
+        }
+        span{
+            width: 22px;
+            height: 22px;
+            border:1px solid $light-green;
+            border-radius:50%;
+            text-align: center;
+        }
+    }
+    .elecinvoice-form{
+        max-width: 100%;
+        padding: 0 40px;
+        .invoice-btn{
+            display: flex;
+            margin-bottom: 30px;
+            a{
+                width: 100%;
+                display: block;
+                color: $light-green;
+                font-size:20px;
+                border:1px solid $light-green;
+                padding:15px 0;
+                text-align: center;
+            }
+            a:hover{
+                background:$orange;
+                color:$dark-green;
+            }
+            .active-btn{
+                background:$light-green;
+                color:$dark-green;
+            }
+        }
+        label, input{
+            display: block;
+        }
+        label{
+            font-size:20px;
+            color: $light-green;
+            margin-bottom: 10px;
+        }
+        input{
+            width:100% ;
+            padding:17px 20px;
+            margin-bottom:16px
+        }
+    }
+    .order-info{
+        width: 35%;
+        @include pad(){
+            display: none;
+        }
+        h3{
+           font-size: 24px;
+           padding:16px 0;
+           background:$light-green;
+           color: $gary-green;
+           text-align: center;
+        }
+    }
+    .user-order,.user-shop{
+        margin-bottom: 20px;
+        border: 1px solid $light-green;
+        ul{
+            padding:16px 20px;
+        }
+    }
+    .user-order{
+        li{
+            display: flex;
+            justify-content:space-between;
+            margin-bottom:10px;
+            color:$gary-green;
+        }
+        li:last-of-type{
+            margin-top:16px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+    .user-shop{
+        li{
+            padding: 20px 0;
+            color: $gary-green;
+            p{
+                line-height:25px;
+            }
+            p:last-of-type {
+                font-size:20px;
+                font-weight: 500;
+            }
+        }
+        li:nth-child(1){
+            width: 120px;
+            height: 80px;
+            background: url("../img/product-1.jpeg") no-repeat center;
+            background-size: cover;
+            display: block;
+            text-indent: 120%;
+            white-space: nowrap;
+            margin-bottom: 16px;
+        }
+        li:nth-child(2){
+            width: 120px;
+            height: 80px;
+            background: url("../img/product-2.jpeg") no-repeat center;
+            background-size: cover;
+            display: block;
+            text-indent: 120%;
+            white-space: nowrap;
+            margin-bottom: 16px;
+        }
+        li:nth-child(3){
+            width: 120px;
+            height: 80px;
+            background: url("../img/product-3.jpeg") no-repeat center;
+            background-size: cover;
+            display: block;
+            text-indent: 120%;
+            white-space: nowrap;
+        }
+    }
+    
+}
