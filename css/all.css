@@ -405,8 +405,6 @@ img {
 
 @media (max-width: 768px) {
   .header {
-    width: 100%;
-    max-width: 100%;
     margin: 0;
   }
 }
