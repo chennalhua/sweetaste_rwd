@@ -1,3 +1,5 @@
-$('.hamburger-menu').click(function(){
+$('.hamburger-toggler').click(function(){
     $('.navbar-nav').toggleClass('active')
 })
+
+
