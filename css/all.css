@@ -62,6 +62,7 @@ table {
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -653,7 +654,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 60px;
-  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -679,9 +679,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -737,7 +734,6 @@ img {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-bottom: 60px;
-  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -834,8 +830,11 @@ img {
   margin-bottom: 30px;
 }
 
-.main-elecinvoice .elecinvoice-form .invoice-btn a {
+.main-elecinvoice .elecinvoice-form .invoice-btn li {
   width: 100%;
+}
+
+.main-elecinvoice .elecinvoice-form .invoice-btn a {
   display: block;
   color: #EAF0ED;
   font-size: 20px;
@@ -914,49 +913,28 @@ img {
   font-weight: 500;
 }
 
+.main-elecinvoice .user-shop img {
+  width: 120px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .main-elecinvoice .user-shop li {
-  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #8DA291;
+  margin-bottom: 16px;
 }
 
 .main-elecinvoice .user-shop li p {
   line-height: 25px;
+  padding: 16px;
 }
 
-.main-elecinvoice .user-shop li p:last-of-type {
+.main-elecinvoice .user-shop li span {
   font-size: 20px;
   font-weight: 500;
-}
-
-.main-elecinvoice .user-shop li:nth-child(1) {
-  width: 120px;
-  height: 80px;
-  background: url("../img/product-1.jpeg") no-repeat center;
-  background-size: cover;
-  display: block;
-  text-indent: 120%;
-  white-space: nowrap;
-  margin-bottom: 16px;
-}
-
-.main-elecinvoice .user-shop li:nth-child(2) {
-  width: 120px;
-  height: 80px;
-  background: url("../img/product-2.jpeg") no-repeat center;
-  background-size: cover;
-  display: block;
-  text-indent: 120%;
-  white-space: nowrap;
-  margin-bottom: 16px;
-}
-
-.main-elecinvoice .user-shop li:nth-child(3) {
-  width: 120px;
-  height: 80px;
-  background: url("../img/product-3.jpeg") no-repeat center;
-  background-size: cover;
-  display: block;
-  text-indent: 120%;
-  white-space: nowrap;
 }
 /*# sourceMappingURL=all.css.map */

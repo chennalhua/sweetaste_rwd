@@ -9,7 +9,6 @@
     justify-content: center;
     align-items: center;
     margin-bottom:60px;
-    overflow: hidden;
     @include pad(){
         width:100%;
         margin:0;
@@ -26,7 +25,6 @@
     }
     .check-process{
         display: flex;
-        justify-content:space-between;
         align-items:center;
         margin-bottom: 32px;
         i{
